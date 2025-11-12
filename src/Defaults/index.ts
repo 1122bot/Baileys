@@ -35,13 +35,13 @@ export const WA_CERT_DETAILS = {
 }
 
 export const PROCESSABLE_HISTORY_TYPES = [
-	proto.HistorySync.HistorySyncType.INITIAL_BOOTSTRAP,
-	proto.HistorySync.HistorySyncType.PUSH_NAME,
-	proto.HistorySync.HistorySyncType.RECENT,
-	proto.HistorySync.HistorySyncType.FULL,
-	proto.HistorySync.HistorySyncType.ON_DEMAND,
-	proto.HistorySync.HistorySyncType.NON_BLOCKING_DATA,
-	proto.HistorySync.HistorySyncType.INITIAL_STATUS_V3,
+	proto.HistorySync?.HistorySyncType?.INITIAL_BOOTSTRAP ?? 0,
+	proto.HistorySync?.HistorySyncType?.PUSH_NAME ?? 1,
+	proto.HistorySync?.HistorySyncType?.RECENT ?? 2,
+	proto.HistorySync?.HistorySyncType?.FULL ?? 3,
+	proto.HistorySync?.HistorySyncType?.ON_DEMAND ?? 4,
+	proto.HistorySync?.HistorySyncType?.NON_BLOCKING_DATA ?? 5,
+	proto.HistorySync?.HistorySyncType?.INITIAL_STATUS_V3 ?? 6,
 ]
 
 export const DEFAULT_CONNECTION_CONFIG: SocketConfig = {
